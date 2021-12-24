@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/logo-icon.png" />
+    <link rel="stylesheet" href="css/commonStyle.css" />
+    <link rel="stylesheet" href="css/characterDetail.css" />
+    <title>Demon Slayer</title>
+  </head>
+
+  <body>
+    <div class="shortcut">
+      <a href="#" class="scroll-to-top">
+        <span class="material-icons">expand_less</span>
+      </a>
+      <a href="#footer" class="scroll-to-bottom">
+        <span class="material-icons">expand_more</span>
+      </a>
+    </div>
+
+    <header id="header">
+      <div class="container">
+        <nav class="nav">
+          <button class="material-icons nav-toggler" onClick="controlMenu()">
+            menu
+          </button>
+
+          <a href="index.html" class="nav-logo">
+            <h1>Demon Slayer</h1>
+          </a>
+
+          <ul class="mobile-menu">
+            <li class="close-menu-btn-wrapper">
+              <button
+                type="button"
+                class="material-icons close-menu-btn"
+                onClick="controlMenu()"
+              >
+                close
+              </button>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" onclick="controlMenu()">
+                <span class="material-icons">home</span>
+                <label>Home</label>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="index.html#story-section"
+                class="nav-link"
+                onclick="controlMenu()"
+              >
+                <span class="material-icons">movie</span>
+                <label>Story</label>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="character.html" class="nav-link" onclick="controlMenu()">
+                <span class="material-icons">people</span>
+                <label>Characters</label>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#footer" class="nav-link" onclick="controlMenu()">
+                <span class="material-icons">info</span>
+                <label>About</label>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="pc-menu">
+            <li class="pc-nav-item">
+              <a href="index.html" class="pc-nav-link">Home</a>
+            </li>
+            <li class="pc-nav-item">
+              <a href="index.html#story-section" class="pc-nav-link">Story</a>
+            </li>
+            <li class="pc-nav-item">
+              <a href="character.html" class="pc-nav-link">Characters</a>
+            </li>
+            <li class="pc-nav-item">
+              <a href="#footer" class="pc-nav-link">About</a>
+            </li>
+          </ul>
+
+          <button
+            class="change-theme-btn"
+            onClick="controlSwitchBtn(),changeTheme()"
+          >
+            <span class="switch"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <section id="character-detail-section">
+      <div class="container">
+        <div class="character-detail-content-container"></div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content-container">
+          <div class="about">
+            <h2 class="title">ABOUT</h2>
+            <p class="description">
+              This website was built by nicolehhw. All images on this website do
+              not belong to me.<br />I Love Demon Slayer❤️ ❤️ ❤️
+            </p>
+            <a href="mailto:xxx@gmail.com" class="email-contact">
+              <span class="material-icons">email</span>
+              <label>Demon Slayer Email</label>
+            </a>
+          </div>
+
+          <div class="explore">
+            <h2 class="title">Explore</h2>
+            <ul class="explore-list">
+              <li><a href="index.html" class="footer-link">Home</a></li>
+              <li><a href="#story-section" class="footer-link">Story</a></li>
+              <li>
+                <a href="#character-section" class="footer-link">Character</a>
+              </li>
+              <li>
+                <a href="https://github.com/nicolehhw" class="footer-link"
+                  >My Github</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="email-subscribe">
+            <h2 class="footer-title">Subscribe</h2>
+            <form
+              method="POST"
+              class="send-email-container"
+              onclick="return false;"
+            >
+              <input
+                type="text"
+                name="email"
+                placeholder="Enter your email"
+                class="email-input"
+              />
+              <button type="submit" class="send-email-btn">
+                <span class="material-icons send-email-icon">send</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/common.js"></script>
+    <script src="js/characterDetail.js"></script>
+  </body>
+</html>
